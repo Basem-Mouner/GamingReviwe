@@ -1,0 +1,27 @@
+/* sm*/
+
+@media(min-width:300px) {}
+
+
+/* md */
+
+@media(min-width:768px) {
+    nav {
+        width: 85%;
+    }
+}
+
+
+/* lg */
+
+@media(min-width:900px) {}
+
+
+/* xl */
+
+@media(min-width:1280px) {}
+
+
+/* xl */
+
+@media(min-width:1280px) {}
