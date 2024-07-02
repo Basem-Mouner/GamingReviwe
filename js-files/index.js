@@ -8,17 +8,28 @@
 
 import Home, { category } from './homeGames.js';
 
+
+
+
+$('#GO_TOP').click(function() {
+    $('html,body').animate({ scrollTop: 0 }, 2000)
+});
 const homeDefaults = new Home(category);
 homeDefaults.defaults();
 homeDefaults.gameByCategory();
 
+// ______________________________________________________________-
+$(window).scroll(function() {
+    let Top = $(window).scrollTop();
+    console.log(Top);
+    if (Top > 800) {
+        $('#GO_TOP').removeClass('d-none');
+        $('#GO_TOP').fadeIn(2000);
 
+    } else {
 
+        $('#GO_TOP').fadeOut(1000);
+    }
+});
 
-// let scrollwindow = $('window').scrolltop();
-
-// if (scrollwindow > 800) {
-//     $('#GO_TOP').fadin(500);
-// } else {
-//     $('#GO_TOP').fadout(500);
-// }
+//_____________________________________________________________
